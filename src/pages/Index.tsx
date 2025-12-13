@@ -3,8 +3,6 @@ import FloatingParticles from '@/components/FloatingParticles';
 import StarField from '@/components/StarField';
 import HeroSection from '@/components/HeroSection';
 import KarmicCalculator from '@/components/KarmicCalculator';
-import RitualCleansing from '@/components/RitualCleansing';
-import ManifestationSection from '@/components/ManifestationSection';
 import FinalCTA from '@/components/FinalCTA';
 
 const Index = () => {
@@ -46,18 +44,6 @@ const Index = () => {
         </div>
 
         <KarmicCalculator />
-        
-        <div className="relative">
-          <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
-        </div>
-
-        <RitualCleansing />
-        
-        <div className="relative">
-          <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
-        </div>
-
-        <ManifestationSection />
         
         <div className="relative">
           <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
