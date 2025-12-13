@@ -1,8 +1,43 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { Shield, Clock, Gift, Sparkles, CheckCircle2 } from 'lucide-react';
 
+interface TimeLeft {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+}
+
 const FinalCTA = () => {
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const newYear2026 = new Date(2026, 0, 1, 0, 0, 0); // January 1, 2026, 00:00:00
+      const difference = newYear2026.getTime() - now.getTime();
+
+      if (difference > 0) {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setTimeLeft({ days, hours, minutes, seconds });
+      } else {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  const formatNumber = (num: number) => num.toString().padStart(2, '0');
+
   return (
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
@@ -11,24 +46,29 @@ const FinalCTA = () => {
           <div className="flex items-center justify-center gap-3 mb-2">
             <Clock className="w-5 h-5 text-primary animate-pulse" />
             <span className="text-primary font-medium uppercase tracking-wider text-sm">
-              Осталось времени
+              До Нового 2026 Года осталось
             </span>
             <Clock className="w-5 h-5 text-primary animate-pulse" />
           </div>
           <div className="flex items-center justify-center gap-2 md:gap-4">
             <div className="bg-card/80 rounded px-3 py-2 border border-primary/30">
-              <span className="font-serif text-2xl md:text-3xl text-gold-glow">00</span>
+              <span className="font-serif text-2xl md:text-3xl text-gold-glow">{formatNumber(timeLeft.days)}</span>
               <span className="text-xs text-muted-foreground block">дней</span>
             </div>
             <span className="text-primary text-2xl">:</span>
             <div className="bg-card/80 rounded px-3 py-2 border border-primary/30">
-              <span className="font-serif text-2xl md:text-3xl text-gold-glow">23</span>
-              <span className="text-xs text-muted-foreground block">часа</span>
+              <span className="font-serif text-2xl md:text-3xl text-gold-glow">{formatNumber(timeLeft.hours)}</span>
+              <span className="text-xs text-muted-foreground block">часов</span>
             </div>
             <span className="text-primary text-2xl">:</span>
             <div className="bg-card/80 rounded px-3 py-2 border border-primary/30">
-              <span className="font-serif text-2xl md:text-3xl text-gold-glow">59</span>
+              <span className="font-serif text-2xl md:text-3xl text-gold-glow">{formatNumber(timeLeft.minutes)}</span>
               <span className="text-xs text-muted-foreground block">минут</span>
+            </div>
+            <span className="text-primary text-2xl">:</span>
+            <div className="bg-card/80 rounded px-3 py-2 border border-primary/30">
+              <span className="font-serif text-2xl md:text-3xl text-gold-glow">{formatNumber(timeLeft.seconds)}</span>
+              <span className="text-xs text-muted-foreground block">секунд</span>
             </div>
           </div>
         </div>
