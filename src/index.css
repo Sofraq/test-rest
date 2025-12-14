@@ -141,6 +141,31 @@
   .golden-divider {
     @apply w-px bg-gradient-to-b from-transparent via-primary/50 to-transparent;
   }
+
+  /* Ambient blur orbs */
+  .ambient-orb {
+    @apply absolute rounded-full pointer-events-none;
+    filter: blur(80px);
+    opacity: 0.15;
+  }
+
+  .ambient-orb-gold {
+    background: radial-gradient(circle, hsl(var(--primary)) 0%, transparent 70%);
+  }
+
+  .ambient-orb-purple {
+    background: radial-gradient(circle, hsl(270 60% 40%) 0%, transparent 70%);
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    @apply backdrop-blur-md bg-card/30 border border-primary/10;
+  }
+
+  /* Smooth section transitions */
+  .section-fade {
+    @apply transition-all duration-700 ease-out;
+  }
 }
 
 @layer utilities {

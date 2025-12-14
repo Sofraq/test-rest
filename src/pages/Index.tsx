@@ -20,6 +20,12 @@ const Index = () => {
       <StarField />
       <FloatingParticles />
       
+      {/* Ambient blur orbs for atmosphere */}
+      <div className="ambient-orb ambient-orb-gold w-[600px] h-[600px] -top-40 -left-40 animate-pulse" style={{ animationDuration: '8s' }} />
+      <div className="ambient-orb ambient-orb-purple w-[500px] h-[500px] top-1/3 -right-40 animate-pulse" style={{ animationDuration: '10s' }} />
+      <div className="ambient-orb ambient-orb-gold w-[400px] h-[400px] bottom-1/4 left-1/4 animate-pulse" style={{ animationDuration: '12s' }} />
+      <div className="ambient-orb ambient-orb-purple w-[350px] h-[350px] bottom-20 right-1/3 animate-pulse" style={{ animationDuration: '9s' }} />
+      
       {/* Gradient overlays */}
       <div 
         className="fixed inset-0 pointer-events-none z-0"
@@ -56,6 +62,12 @@ const Index = () => {
           <p className="text-muted-foreground text-sm">
             © 2024 Ключ Перехода. Все права защищены.
           </p>
+          <button 
+            className="text-primary/50 text-xs mt-3 hover:text-primary/80 transition-colors underline underline-offset-2"
+            onClick={() => console.log('Open license agreement')}
+          >
+            Лицензионное соглашение
+          </button>
           <p className="text-primary/50 text-xs mt-2 font-serif italic">
             «Сила в знании, знание в числах»
           </p>
