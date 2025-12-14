@@ -116,12 +116,12 @@ const FinalCTA = () => {
             <div className="flex items-center justify-center gap-4 mb-2">
               <span className="text-muted-foreground line-through text-xl">4 990 ₽</span>
               <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-medium">
-                -60%
+                -90%
               </span>
             </div>
             <div className="flex items-baseline justify-center gap-2">
               <span className="font-serif text-5xl md:text-6xl text-gold-glow font-bold">
-                1 990
+                490
               </span>
               <span className="text-primary text-2xl">₽</span>
             </div>
