@@ -1,19 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import FloatingParticles from '@/components/FloatingParticles';
 import StarField from '@/components/StarField';
 import HeroSection from '@/components/HeroSection';
 import KarmicCalculator from '@/components/KarmicCalculator';
 import FinalCTA from '@/components/FinalCTA';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const Index = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
   return (
     <div className="min-h-screen bg-cosmic relative overflow-x-hidden grain-overlay">
       {/* Background layers */}
@@ -44,34 +37,44 @@ const Index = () => {
       <main className="relative z-10">
         <HeroSection />
         
-        <div className="relative">
-          {/* Decorative divider */}
-          <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
-        </div>
+        <ScrollReveal delay={100}>
+          <div className="relative">
+            {/* Decorative divider */}
+            <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
+          </div>
+        </ScrollReveal>
 
-        <KarmicCalculator />
+        <ScrollReveal delay={150}>
+          <KarmicCalculator />
+        </ScrollReveal>
         
-        <div className="relative">
-          <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
-        </div>
+        <ScrollReveal delay={100}>
+          <div className="relative">
+            <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
+          </div>
+        </ScrollReveal>
 
-        <FinalCTA />
+        <ScrollReveal delay={200}>
+          <FinalCTA />
+        </ScrollReveal>
 
         {/* Footer */}
-        <footer className="py-10 text-center border-t border-primary/10">
-          <p className="text-muted-foreground text-sm">
-            © 2024 Ключ Перехода. Все права защищены.
-          </p>
-          <button 
-            className="text-primary/50 text-xs mt-3 hover:text-primary/80 transition-colors underline underline-offset-2"
-            onClick={() => console.log('Open license agreement')}
-          >
-            Лицензионное соглашение
-          </button>
-          <p className="text-primary/50 text-xs mt-2 font-serif italic">
-            «Сила в знании, знание в числах»
-          </p>
-        </footer>
+        <ScrollReveal delay={100} direction="none">
+          <footer className="py-10 text-center border-t border-primary/10">
+            <p className="text-muted-foreground text-sm">
+              © 2024 Ключ Перехода. Все права защищены.
+            </p>
+            <button 
+              className="text-primary/50 text-xs mt-3 hover:text-primary/80 transition-colors underline underline-offset-2"
+              onClick={() => console.log('Open license agreement')}
+            >
+              Лицензионное соглашение
+            </button>
+            <p className="text-primary/50 text-xs mt-2 font-serif italic">
+              «Сила в знании, знание в числах»
+            </p>
+          </footer>
+        </ScrollReveal>
       </main>
     </div>
   );
