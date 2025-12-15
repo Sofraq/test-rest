@@ -79,35 +79,35 @@ const FinalCTA = () => {
             КЛЮЧ ПЕРЕХОДА 2026
           </h2>
           
-          <p className="text-foreground/80 mb-8 max-w-xl mx-auto">
-            Полная система трансформации: ритуалы очищения, программирование года, персональный код изобилия
+          <p className="text-foreground/80 mb-8 max-w-2xl mx-auto">
+            Практическое руководство по квантовому скачку. Хирургическое вмешательство в судьбу: отсечение сценария Жертвы и вход на Золотую Линию Времени.
           </p>
 
           {/* What's Included */}
-          <div className="grid sm:grid-cols-2 gap-3 mb-8 text-left max-w-lg mx-auto">
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-sm text-foreground/90">Диагностика кармического кода</span>
+          <div className="grid gap-3 mb-8 text-left max-w-xl mx-auto">
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-sm text-foreground/90">Диагностика Судьбы: Узнай, почему ты застряла на «Серой Линии» бедности.</span>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-sm text-foreground/90">7 ритуалов очищения</span>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-sm text-foreground/90">Ритуал «Печать Отречения»: Древняя зеркальная практика аннулирования прошлого.</span>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-sm text-foreground/90">12 дней силы — гайд</span>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-sm text-foreground/90">Техника «Снятие Мертвой Кожи»: Физическая чистка тела от программ одиночества.</span>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-sm text-foreground/90">Код изобилия персонально</span>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-sm text-foreground/90">Выход из матрицы: Как перестать быть «удобной» и стать Хозяйкой 2026 года.</span>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-sm text-foreground/90">Ритуал кошелька</span>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-sm text-foreground/90">Экзорцизм безденежья: Переклад негатива на соль (древний метод).</span>
             </div>
-            <div className="flex items-center gap-2">
-              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" />
-              <span className="text-sm text-foreground/90">Бонус: Медитация изобилия</span>
+            <div className="flex items-start gap-2">
+              <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
+              <span className="text-sm text-foreground/90">Точка невозврата: Пошаговая инструкция, как переписать код до боя курантов.</span>
             </div>
           </div>
 
