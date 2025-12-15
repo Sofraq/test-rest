@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import FloatingParticles from '@/components/FloatingParticles';
 import StarField from '@/components/StarField';
 import HeroSection from '@/components/HeroSection';
@@ -64,12 +65,13 @@ const Index = () => {
             <p className="text-muted-foreground text-sm">
               © 2024 Ключ Перехода. Все права защищены.
             </p>
-            <button 
-              className="text-primary/50 text-xs mt-3 hover:text-primary/80 transition-colors underline underline-offset-2"
-              onClick={() => console.log('Open license agreement')}
+            <Link 
+              to="/license-agreement"
+              className="text-muted-foreground/40 hover:text-muted-foreground/60 transition-colors mt-3 inline-block"
+              style={{ fontSize: '10px' }}
             >
               Лицензионное соглашение
-            </button>
+            </Link>
             <p className="text-primary/50 text-xs mt-2 font-serif italic">
               «Сила в знании, знание в числах»
             </p>
