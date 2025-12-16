@@ -193,16 +193,16 @@ const KarmicCalculator = () => {
               </div>
 
               <div className="text-center mt-8 px-2">
-                <p className="text-primary/80 italic mb-4">
+                <Button 
+                  variant="goldPulse" 
+                  size="lg" 
+                  className="w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 whitespace-normal h-auto py-3 mb-4"
+                >
+                  ПОЛУЧИТЬ РАЗБОР
+                </Button>
+                <p className="text-primary/80 italic">
                   Хочешь узнать, как разблокировать свой денежный канал в 2026?
                 </p>
-                <Button 
-                  variant="goldOutline" 
-                  size="lg" 
-                  className="w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 whitespace-normal h-auto py-3"
-                >
-                  ПОЛУЧИТЬ РИТУАЛ РАЗБЛОКИРОВКИ
-                </Button>
               </div>
             </div>
           )}

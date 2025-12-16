@@ -91,7 +91,7 @@ const FinalCTA = () => {
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-              <span className="text-sm text-foreground/90">Ритуал «Печать Отречения»: Древняя зеркальная практика аннулирования прошлого.</span>
+              <span className="text-sm text-foreground/90">Техника «Печать Отречения»: Древняя зеркальная практика аннулирования прошлого.</span>
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -103,7 +103,7 @@ const FinalCTA = () => {
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-              <span className="text-sm text-foreground/90">Экзорцизм безденежья: Переклад негатива на соль (древний метод).</span>
+              <span className="text-sm text-foreground/90">Избавление от безденежья: Переклад негатива на соль (древний метод).</span>
             </div>
             <div className="flex items-start gap-2">
               <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
@@ -137,7 +137,7 @@ const FinalCTA = () => {
             className="w-full sm:w-auto min-w-[280px] mb-8"
           >
             <Sparkles className="w-5 h-5" />
-            ПОЛУЧИТЬ РИТУАЛ
+            ПОЛУЧИТЬ РАЗБОР
           </Button>
 
           {/* Trust Badges */}
