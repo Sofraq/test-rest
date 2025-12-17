@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sparkles, MessageCircle, CheckCircle2, Gift } from 'lucide-react';
 import FloatingParticles from '@/components/FloatingParticles';
 import StarField from '@/components/StarField';
 
 const SuccessAccess = () => {
+  useEffect(() => {
+    const meta = document.createElement('meta');
+    meta.name = 'robots';
+    meta.content = 'noindex, nofollow';
+    document.head.appendChild(meta);
+    return () => { document.head.removeChild(meta); };
+  }, []);
   const handleGetMaterial = () => {
     // Placeholder for material access
     console.log('Get material clicked');

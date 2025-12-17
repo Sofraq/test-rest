@@ -8,12 +8,14 @@ import NotFound from "./pages/NotFound";
 import LicenseAgreement from "./pages/LicenseAgreement";
 import SuccessAccess from "./pages/SuccessAccess";
 import Offer from "./pages/Offer";
+import YandexMetrica from "./components/YandexMetrica";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
+      <YandexMetrica />
       <Toaster />
       <Sonner />
       <BrowserRouter>
