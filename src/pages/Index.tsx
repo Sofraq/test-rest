@@ -65,13 +65,23 @@ const Index = () => {
             <p className="text-muted-foreground text-sm">
               © 2024 Ключ Перехода. Все права защищены.
             </p>
-            <Link 
-              to="/license-agreement"
-              className="text-muted-foreground/40 hover:text-muted-foreground/60 transition-colors mt-3 inline-block"
-              style={{ fontSize: '10px' }}
-            >
-              Лицензионное соглашение
-            </Link>
+            <div className="flex items-center justify-center gap-4 mt-3">
+              <Link 
+                to="/license-agreement"
+                className="text-muted-foreground/40 hover:text-muted-foreground/60 transition-colors"
+                style={{ fontSize: '10px' }}
+              >
+                Лицензионное соглашение
+              </Link>
+              <span className="text-muted-foreground/30" style={{ fontSize: '10px' }}>|</span>
+              <Link 
+                to="/offer"
+                className="text-muted-foreground/40 hover:text-muted-foreground/60 transition-colors"
+                style={{ fontSize: '10px' }}
+              >
+                Оферта
+              </Link>
+            </div>
             <p className="text-primary/50 text-xs mt-2 font-serif italic">
               «Сила в знании, знание в числах»
             </p>

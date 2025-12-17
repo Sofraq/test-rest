@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import LicenseAgreement from "./pages/LicenseAgreement";
 import SuccessAccess from "./pages/SuccessAccess";
+import Offer from "./pages/Offer";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +21,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/success-access/course" element={<SuccessAccess />} />
           <Route path="/license-agreement" element={<LicenseAgreement />} />
+          <Route path="/offer" element={<Offer />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
