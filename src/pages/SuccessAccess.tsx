@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Lock, CheckCircle2 } from 'lucide-react';
 import FloatingParticles from '@/components/FloatingParticles';
 import StarField from '@/components/StarField';
+import { Button } from '@/components/ui/button';
 
 const SuccessAccess = () => {
   useEffect(() => {
@@ -41,9 +42,9 @@ const SuccessAccess = () => {
           </p>
 
           {/* Description Card */}
-          <div className="golden-frame p-8 md:p-10 bg-card/50 backdrop-blur-sm mb-10 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            <p className="text-foreground/90 text-lg md:text-xl leading-relaxed font-serif italic">
-              «Твой экземпляр гайда уже загружен в Закрытый Канал "Архив 2026". Там же ты найдешь аудио-инструкцию по активации защиты (которую нельзя выкладывать публично).»
+          <div className="golden-frame p-8 md:p-10 bg-gradient-to-br from-gold-dark/20 via-primary/10 to-gold/20 backdrop-blur-sm mb-10 animate-fade-in-up border border-gold/30" style={{ animationDelay: '0.3s' }}>
+            <p className="text-lg md:text-xl leading-relaxed font-serif italic bg-gradient-to-r from-gold via-primary to-gold bg-clip-text text-transparent">
+              Твой экземпляр гайда уже загружен в Закрытый Канал "Архив 2026". Там же ты найдешь много других полезных практик по активации защиты и усилению ауры
             </p>
           </div>
 
@@ -53,10 +54,15 @@ const SuccessAccess = () => {
               href="https://clck.ru/3Qt7qR"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-10 py-5 text-lg md:text-xl font-bold text-background bg-gradient-gold rounded-lg shadow-gold-glow hover:shadow-gold-intense transition-all duration-300 animate-pulse-gold"
             >
-              <Lock className="w-6 h-6" />
-              ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ И СКАЧАТЬ
+              <Button 
+                variant="goldPulse" 
+                size="xl" 
+                className="min-w-[280px]"
+              >
+                <Lock className="w-5 h-5" />
+                ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ И СКАЧАТЬ
+              </Button>
             </a>
           </div>
 
