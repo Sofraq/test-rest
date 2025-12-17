@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { Button } from '@/components/ui/button';
-import { Sparkles, MessageCircle, CheckCircle2, Gift } from 'lucide-react';
+import { Lock, CheckCircle2 } from 'lucide-react';
 import FloatingParticles from '@/components/FloatingParticles';
 import StarField from '@/components/StarField';
 
@@ -12,14 +11,6 @@ const SuccessAccess = () => {
     document.head.appendChild(meta);
     return () => { document.head.removeChild(meta); };
   }, []);
-  const handleGetMaterial = () => {
-    // Placeholder for material access
-    console.log('Get material clicked');
-  };
-
-  const handleContactManager = () => {
-    window.open('https://t.me/', '_blank');
-  };
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
@@ -39,60 +30,39 @@ const SuccessAccess = () => {
             </div>
           </div>
 
-          {/* Title */}
-          <h1 className="font-serif text-4xl md:text-5xl text-gold-glow mb-4 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
-            Поздравляем!
+          {/* Main Heading */}
+          <h1 className="font-serif text-3xl md:text-5xl text-gold-glow mb-6 animate-fade-in-up" style={{ animationDelay: '0.1s' }}>
+            ОПЛАТА ПРИНЯТА. ДОСТУП ОТКРЫТ.
           </h1>
           
-          <p className="text-xl text-foreground/90 mb-2 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Оплата прошла успешно
-          </p>
-          
-          <p className="text-foreground/70 mb-12 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
-            Ваш КЛЮЧ ПЕРЕХОДА 2026 готов к получению
+          {/* Subheading */}
+          <p className="text-lg md:text-xl text-foreground/80 mb-10 animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
+            Ты сделала первый шаг. Но файл «Ключ Перехода» — это энергетически сильный материал. Мы не храним его в открытом доступе в интернете.
           </p>
 
-          {/* Main Card */}
-          <div className="golden-frame p-8 md:p-10 bg-card/50 backdrop-blur-sm animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <Gift className="w-6 h-6 text-primary" />
-              <h2 className="font-serif text-2xl text-gold-glow">
-                Ваш доступ активирован
-              </h2>
-            </div>
-
-            <p className="text-foreground/80 mb-8">
-              Нажмите кнопку ниже, чтобы получить материалы курса. 
-              Если у вас возникли вопросы — наш менеджер готов помочь.
+          {/* Description Card */}
+          <div className="golden-frame p-8 md:p-10 bg-card/50 backdrop-blur-sm mb-10 animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
+            <p className="text-foreground/90 text-lg md:text-xl leading-relaxed font-serif italic">
+              «Твой экземпляр гайда уже загружен в Закрытый Канал "Архив 2026". Там же ты найдешь аудио-инструкцию по активации защиты (которую нельзя выкладывать публично).»
             </p>
-
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                variant="goldPulse" 
-                size="xl" 
-                className="min-w-[220px]"
-                onClick={handleGetMaterial}
-              >
-                <Sparkles className="w-5 h-5" />
-                Получить материал
-              </Button>
-              
-              <Button 
-                variant="goldOutline" 
-                size="xl" 
-                className="min-w-[220px]"
-                onClick={handleContactManager}
-              >
-                <MessageCircle className="w-5 h-5" />
-                Написать в Telegram
-              </Button>
-            </div>
           </div>
 
-          {/* Additional Info */}
-          <p className="text-center text-primary/60 mt-8 italic font-serif animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-            «Ваша трансформация начинается прямо сейчас»
+          {/* CTA Button */}
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+            <a
+              href="https://clck.ru/3Qt7qR"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-3 px-10 py-5 text-lg md:text-xl font-bold text-background bg-gradient-gold rounded-lg shadow-gold-glow hover:shadow-gold-intense transition-all duration-300 animate-pulse-gold"
+            >
+              <Lock className="w-6 h-6" />
+              ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ И СКАЧАТЬ
+            </a>
+          </div>
+
+          {/* Footer note */}
+          <p className="text-center text-primary/50 mt-10 text-sm animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+            Ссылка откроется в Telegram
           </p>
         </div>
       </main>
