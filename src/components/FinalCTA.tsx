@@ -135,11 +135,12 @@ const FinalCTA = () => {
             href="https://auth.robokassa.ru/merchant/Invoice/IglCqDSfHEy8P65ZzYnTpA"
             target="_blank"
             rel="noopener noreferrer"
+            className="block"
           >
             <Button 
               variant="goldPulse" 
               size="xl" 
-              className="w-full sm:w-auto min-w-[280px] mb-8"
+              className="w-full max-w-[340px] sm:w-auto sm:min-w-[280px] mb-8 mx-auto"
             >
               <Sparkles className="w-5 h-5" />
               ПОЛУЧИТЬ РАЗБОР
