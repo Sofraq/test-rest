@@ -59,10 +59,12 @@ const SuccessAccess = () => {
               <Button 
                 variant="goldPulse" 
                 size="xl" 
-                className="w-full max-w-[320px] sm:w-auto sm:min-w-[280px] mx-auto text-[11px] sm:text-base px-4 sm:px-6"
+                className="w-full max-w-[280px] sm:max-w-none sm:min-w-[320px] mx-auto flex-col gap-0.5 py-4 sm:flex-row sm:gap-2 sm:py-3"
               >
-                <Lock className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span className="break-words text-center leading-tight">ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ И СКАЧАТЬ</span>
+                <Lock className="w-5 h-5 flex-shrink-0" />
+                <span className="text-sm sm:text-base leading-tight text-center">
+                  ПЕРЕЙТИ В ЗАКРЫТЫЙ<br className="sm:hidden" /> КАНАЛ И СКАЧАТЬ
+                </span>
               </Button>
             </a>
           </div>
