@@ -59,7 +59,7 @@ const SuccessAccess = () => {
               <Button 
                 variant="goldPulse" 
                 size="xl" 
-                className="w-full max-w-[340px] sm:w-auto sm:min-w-[280px] mx-auto text-sm sm:text-base"
+                className="w-full max-w-[340px] sm:w-auto sm:min-w-[280px] mx-auto text-xs sm:text-base"
               >
                 <Lock className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
                 <span className="whitespace-nowrap">ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ И СКАЧАТЬ</span>
