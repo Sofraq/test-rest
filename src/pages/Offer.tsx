@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
 import StarField from '@/components/StarField';
 
 const Offer = () => {
+  useEffect(() => {
+    const meta = document.createElement('meta');
+    meta.name = 'robots';
+    meta.content = 'noindex, nofollow';
+    document.head.appendChild(meta);
+    return () => { document.head.removeChild(meta); };
+  }, []);
+
   return (
     <div className="min-h-screen bg-cosmic relative overflow-x-hidden grain-overlay">
       <StarField />
@@ -20,15 +28,9 @@ const Offer = () => {
           Вернуться на главную
         </Link>
 
-        <h1 className="font-serif text-2xl md:text-3xl text-primary mb-2">
+        <h1 className="font-serif text-2xl md:text-3xl text-primary mb-8">
           ДОКУМЕНТ 1: ПУБЛИЧНАЯ ОФЕРТА
         </h1>
-        <p className="text-muted-foreground/60 mb-8" style={{ fontSize: '12px' }}>
-          (Этот документ регулирует продажу: ты даешь доступ к материалам, клиент платит деньги).
-        </p>
-        <p className="text-muted-foreground/70 mb-8 italic" style={{ fontSize: '11px' }}>
-          Ключевая фишка для модерации: В п. 2.2 и 6.4 мы прямо пишем, что услуги носят культурно-развлекательный и консультационный характер, что снимает ответственность за «не сбывшиеся прогнозы».
-        </p>
 
         <h2 className="font-serif text-lg text-primary/90 mb-6 text-center">
           ПУБЛИЧНАЯ ОФЕРТА<br />на заключение договора оказания информационных услуг

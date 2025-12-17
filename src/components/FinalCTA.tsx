@@ -131,14 +131,20 @@ const FinalCTA = () => {
           </div>
 
           {/* CTA Button */}
-          <Button 
-            variant="goldPulse" 
-            size="xl" 
-            className="w-full sm:w-auto min-w-[280px] mb-8"
+          <a 
+            href="https://auth.robokassa.ru/merchant/Invoice/IglCqDSfHEy8P65ZzYnTpA"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Sparkles className="w-5 h-5" />
-            ПОЛУЧИТЬ РАЗБОР
-          </Button>
+            <Button 
+              variant="goldPulse" 
+              size="xl" 
+              className="w-full sm:w-auto min-w-[280px] mb-8"
+            >
+              <Sparkles className="w-5 h-5" />
+              ПОЛУЧИТЬ РАЗБОР
+            </Button>
+          </a>
 
           {/* Trust Badges */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-muted-foreground">
