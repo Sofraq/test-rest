@@ -49,20 +49,19 @@ const SuccessAccess = () => {
           </div>
 
           {/* CTA Button */}
-          <div className="animate-fade-in-up px-2" style={{ animationDelay: '0.4s' }}>
+          <div className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
             <a
               href="https://clck.ru/3Qt7qR"
               target="_blank"
               rel="noopener noreferrer"
-              className="block"
             >
               <Button 
                 variant="goldPulse" 
                 size="xl" 
-                className="w-full sm:w-auto sm:min-w-[280px] text-sm sm:text-base"
+                className="min-w-[280px]"
               >
-                <Lock className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0" />
-                <span className="whitespace-nowrap">ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ И СКАЧАТЬ</span>
+                <Lock className="w-5 h-5" />
+                ПЕРЕЙТИ В ЗАКРЫТЫЙ КАНАЛ И СКАЧАТЬ
               </Button>
             </a>
           </div>
