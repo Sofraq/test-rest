@@ -132,7 +132,7 @@ const FinalCTA = () => {
 
           {/* CTA Button */}
           <a 
-            href="https://auth.robokassa.ru/merchant/Invoice/IglCqDSfHEy8P65ZzYnTpA"
+            href="https://auth.robokassa.ru/merchant/Invoice/CtNoA8yDO0yGecPk6_aEPg"
             target="_blank"
             rel="noopener noreferrer"
             className="block"
@@ -140,7 +140,7 @@ const FinalCTA = () => {
             <Button 
               variant="goldPulse" 
               size="xl" 
-              className="w-full max-w-[340px] sm:w-auto sm:min-w-[280px] mb-8 mx-auto"
+              className="w-full max-w-[340px] sm:w-auto sm:min-w-[280px] mb-8 mx-auto pointer-events-none"
             >
               <Sparkles className="w-5 h-5" />
               ПОЛУЧИТЬ РАЗБОР
