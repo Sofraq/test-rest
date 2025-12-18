@@ -196,8 +196,13 @@ const KarmicCalculator = () => {
                   <div className="relative">
                     <p className="text-primary/90 font-medium mb-1">• Твой барьер:</p>
                     <p className="blur-[6px] select-none">{povertyScenarios[result].barrier}</p>
-                    <div className="absolute inset-x-0 top-8 flex items-start justify-center">
-                      <div className="flex flex-col items-center gap-3 bg-cosmic-deep/90 backdrop-blur-sm rounded-xl px-6 py-4 border border-primary/20 shadow-xl">
+                    <a 
+                      href="https://auth.robokassa.ru/merchant/Invoice/CtNoA8yDO0yGecPk6_aEPg"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="absolute inset-x-0 top-8 flex items-start justify-center cursor-pointer"
+                    >
+                      <div className="flex flex-col items-center gap-3 bg-cosmic-deep/90 backdrop-blur-sm rounded-xl px-6 py-4 border border-primary/20 shadow-xl hover:border-primary/40 hover:shadow-2xl transition-all duration-300">
                         <ul className="text-sm text-left space-y-1.5">
                           <li className="flex items-center gap-2">
                             <span className="text-primary">✓</span>
@@ -216,24 +221,16 @@ const KarmicCalculator = () => {
                             <span className="text-foreground/90">Бонус: PDF-Гайд навсегда</span>
                           </li>
                         </ul>
-                        <a 
-                          href="https://auth.robokassa.ru/merchant/Invoice/CtNoA8yDO0yGecPk6_aEPg"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="block w-full cursor-pointer"
+                        <Button 
+                          variant="gold" 
+                          size="default"
+                          className="shadow-lg w-full"
                         >
-                          <Button 
-                            variant="gold" 
-                            size="default"
-                            className="shadow-lg w-full"
-                            asChild
-                          >
-                            <span>Снять блоки + Гайд <span className="inline-flex items-center gap-1.5">(<span className="line-through opacity-60">1490₽</span> <span className="font-bold">199₽</span>)</span></span>
-                          </Button>
-                        </a>
+                          Снять блоки + Гайд <span className="inline-flex items-center gap-1.5">(<span className="line-through opacity-60">1490₽</span> <span className="font-bold">199₽</span>)</span>
+                        </Button>
                         <p className="text-xs italic text-primary/70">Твоя личная стратегия и решение проблем 2026</p>
                       </div>
-                    </div>
+                    </a>
                   </div>
                   
                   <div>
