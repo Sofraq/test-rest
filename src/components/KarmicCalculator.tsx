@@ -190,7 +190,7 @@ const KarmicCalculator = () => {
                   
                   <div>
                     <p className="text-primary/90 font-medium mb-1">• Как это проявляется:</p>
-                    <p className="blur-[6px] select-none">{povertyScenarios[result].manifestation}</p>
+                    <p>{povertyScenarios[result].manifestation}</p>
                   </div>
                   
                   <div className="relative">
