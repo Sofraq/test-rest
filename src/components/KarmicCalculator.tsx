@@ -197,7 +197,25 @@ const KarmicCalculator = () => {
                     <p className="text-primary/90 font-medium mb-1">• Твой барьер:</p>
                     <p className="blur-[6px] select-none">{povertyScenarios[result].barrier}</p>
                     <div className="absolute inset-0 flex items-center justify-center mt-4">
-                      <div className="flex flex-col items-center gap-1">
+                      <div className="flex flex-col items-center gap-3 bg-cosmic-deep/90 backdrop-blur-sm rounded-xl px-6 py-4 border border-primary/20 shadow-xl">
+                        <ul className="text-sm text-left space-y-1.5">
+                          <li className="flex items-center gap-2">
+                            <span className="text-primary">✓</span>
+                            <span className="text-foreground/90">Твои личные риски и барьеры</span>
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <span className="text-primary">✓</span>
+                            <span className="text-foreground/90">Финансовая стратегия 2026</span>
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <span className="text-primary">✓</span>
+                            <span className="text-foreground/90">Техники проработки блоков</span>
+                          </li>
+                          <li className="flex items-center gap-2">
+                            <span className="text-primary">🎁</span>
+                            <span className="text-foreground/90">Бонус: PDF-Гайд навсегда</span>
+                          </li>
+                        </ul>
                         <a 
                           href="https://auth.robokassa.ru/merchant/Invoice/IglCqDSfHEy8P65ZzYnTpA"
                           target="_blank"
