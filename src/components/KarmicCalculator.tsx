@@ -223,24 +223,6 @@ const KarmicCalculator = () => {
                 </div>
               </div>
 
-              <div className="text-center mt-8 px-2">
-                <a 
-                  href="https://auth.robokassa.ru/merchant/Invoice/IglCqDSfHEy8P65ZzYnTpA"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button 
-                    variant="goldPulse" 
-                    size="lg" 
-                    className="w-full sm:w-auto text-sm sm:text-base px-4 sm:px-6 whitespace-normal h-auto py-3 mb-4"
-                  >
-                    ПОЛУЧИТЬ РАЗБОР
-                  </Button>
-                </a>
-                <p className="text-primary/80 italic">
-                  Хочешь узнать, как разблокировать свой денежный канал в 2026?
-                </p>
-              </div>
             </div>
           )}
         </div>
