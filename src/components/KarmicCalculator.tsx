@@ -226,7 +226,7 @@ const KarmicCalculator = () => {
                             size="default"
                             className="shadow-lg"
                           >
-                            Снять блоки + Гайд <span className="font-bold">(490₽)</span>
+                            Снять блоки + Гайд <span className="inline-flex items-center gap-1.5">(<span className="line-through opacity-60">1490₽</span> <span className="font-bold">199₽</span>)</span>
                           </Button>
                         </a>
                         <p className="text-xs italic text-primary/70">Твоя личная стратегия и решение проблем 2026</p>
