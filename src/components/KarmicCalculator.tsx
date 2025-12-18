@@ -196,7 +196,7 @@ const KarmicCalculator = () => {
                   <div className="relative">
                     <p className="text-primary/90 font-medium mb-1">• Твой барьер:</p>
                     <p className="blur-[6px] select-none">{povertyScenarios[result].barrier}</p>
-                    <div className="absolute inset-x-0 top-16 flex items-start justify-center">
+                    <div className="absolute inset-x-0 top-10 flex items-start justify-center">
                       <div className="flex flex-col items-center gap-3 bg-cosmic-deep/90 backdrop-blur-sm rounded-xl px-6 py-4 border border-primary/20 shadow-xl">
                         <ul className="text-sm text-left space-y-1.5">
                           <li className="flex items-center gap-2">
