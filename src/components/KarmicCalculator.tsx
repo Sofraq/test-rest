@@ -190,17 +190,17 @@ const KarmicCalculator = () => {
                   
                   <div>
                     <p className="text-primary/90 font-medium mb-1">• Как это проявляется:</p>
-                    <p>{povertyScenarios[result].manifestation}</p>
+                    <p className="blur-[6px] select-none">{povertyScenarios[result].manifestation}</p>
                   </div>
                   
                   <div>
                     <p className="text-primary/90 font-medium mb-1">• Твой барьер:</p>
-                    <p>{povertyScenarios[result].barrier}</p>
+                    <p className="blur-[6px] select-none">{povertyScenarios[result].barrier}</p>
                   </div>
                   
                   <div>
                     <p className="text-primary/90 font-medium mb-1">• Риски 2026 года:</p>
-                    <p className="text-destructive/90">{povertyScenarios[result].risks}</p>
+                    <p className="text-destructive/90 blur-[6px] select-none">{povertyScenarios[result].risks}</p>
                   </div>
                 </div>
               </div>
