@@ -197,7 +197,7 @@ const KarmicCalculator = () => {
                     <p className="text-primary/90 font-medium mb-1">• Твой барьер:</p>
                     <p className="blur-[6px] select-none">{povertyScenarios[result].barrier}</p>
                     <a 
-                      href="https://auth.robokassa.ru/merchant/Invoice/CtNoA8yDO0yGecPk6_aEPg"
+                      href="https://t.me/+24_pYqKFRp1mNTVk"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="absolute inset-x-0 top-8 flex items-start justify-center cursor-pointer"
@@ -226,7 +226,7 @@ const KarmicCalculator = () => {
                           size="default"
                           className="shadow-lg w-full"
                         >
-                          Снять блоки + Гайд <span className="inline-flex items-center gap-1.5">(<span className="line-through opacity-60">1490₽</span> <span className="font-bold">199₽</span>)</span>
+                          Снять блоки + Гайд (БЕСПЛАТНО)
                         </Button>
                         <p className="text-xs italic text-primary/70">Твоя личная стратегия и решение проблем 2026</p>
                       </div>
