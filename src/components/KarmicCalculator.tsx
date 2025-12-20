@@ -200,7 +200,7 @@ const KarmicCalculator = () => {
                       href="https://t.me/+24_pYqKFRp1mNTVk"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="absolute inset-x-0 top-8 flex items-start justify-center cursor-pointer"
+                      className="absolute inset-x-0 top-8 z-10 flex items-start justify-center cursor-pointer"
                     >
                       <div className="flex flex-col items-center gap-3 bg-cosmic-deep/90 backdrop-blur-sm rounded-xl px-6 py-4 border border-primary/20 shadow-xl hover:border-primary/40 hover:shadow-2xl transition-all duration-300">
                         <ul className="text-sm text-left space-y-1.5">
