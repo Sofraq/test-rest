@@ -222,7 +222,7 @@ const KarmicCalculator = () => {
                           </li>
                         </ul>
                         <div className="w-full bg-gradient-to-r from-gold-dark via-gold to-gold-light text-cosmic-deep font-semibold text-center py-2.5 px-4 rounded-lg shadow-lg">
-                          Снять блоки + Гайд (БЕСПЛАТНО)
+                          Снять блоки + Гайд
                         </div>
                         <p className="text-xs italic text-primary/70">Твоя личная стратегия и решение проблем 2026</p>
                       </div>

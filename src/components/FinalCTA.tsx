@@ -114,14 +114,14 @@ const FinalCTA = () => {
           {/* Price */}
           <div className="mb-8">
             <div className="flex items-center justify-center gap-4 mb-2">
-              <span className="text-muted-foreground line-through text-xl">4 999 ₽</span>
+              <span className="text-muted-foreground line-through text-xl">6 666 ₽</span>
               <span className="bg-primary/20 text-primary px-3 py-1 rounded-full text-sm font-medium">
                 -90%
               </span>
             </div>
             <div className="flex items-baseline justify-center gap-2">
               <span className="font-serif text-5xl md:text-6xl text-gold-glow font-bold">
-                499
+                666
               </span>
               <span className="text-primary text-2xl">₽</span>
             </div>
@@ -132,7 +132,7 @@ const FinalCTA = () => {
 
           {/* CTA Button */}
           <a 
-            href="https://auth.robokassa.ru/merchant/Invoice/uu5P5fcpYEKK2v1cFt0MNQ"
+            href="https://auth.robokassa.ru/merchant/Invoice/pQvgIJoE4kGyBF52gjg64Q"
             target="_blank"
             rel="noopener noreferrer"
             className="block"
