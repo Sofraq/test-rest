@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from './ui/button';
 import { Sparkles } from 'lucide-react';
+import rafaelPhoto from '@/assets/rafael-photo.jpg';
 
 const HeroSection = () => {
   const scrollToCalculator = () => {
@@ -9,77 +10,21 @@ const HeroSection = () => {
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center px-4 py-20 overflow-hidden">
-      {/* Sacred Geometry Image */}
-      <div className="relative w-full max-w-3xl mx-auto mb-8 sm:mb-12 aspect-video">
-        <div className="absolute inset-0 rounded-2xl overflow-hidden">
-          <div 
-            className="w-full h-full bg-gradient-to-br from-cosmic-purple via-cosmic-deep to-cosmic-midnight"
-            style={{
-              backgroundImage: `
-                radial-gradient(circle at 50% 50%, hsl(43 74% 49% / 0.1) 0%, transparent 50%),
-                linear-gradient(135deg, hsl(270 50% 15%) 0%, hsl(260 80% 5%) 100%)
-              `,
-            }}
-          >
-            {/* Sacred Geometry Pattern - Metatron's Cube */}
-            <svg
-              viewBox="0 0 400 300"
-              className="w-full h-full"
-              style={{ 
-                filter: 'drop-shadow(0 0 20px hsl(43 74% 49% / 0.5))',
-              }}
-            >
-              {/* Central hexagon */}
-              <g transform="translate(200, 150)" stroke="hsl(43 74% 49%)" strokeWidth="1" fill="none" opacity="0.8">
-                {/* Outer circles */}
-                <circle r="80" opacity="0.3" />
-                <circle r="60" opacity="0.4" />
-                <circle r="40" opacity="0.5" />
-                
-                {/* Hexagon */}
-                <polygon 
-                  points="0,-70 60.6,-35 60.6,35 0,70 -60.6,35 -60.6,-35" 
-                  strokeWidth="1.5"
-                />
-                
-                {/* Inner star */}
-                <polygon 
-                  points="0,-40 10.4,-12.4 40,-12.4 16.8,6.4 25.6,36 0,18.4 -25.6,36 -16.8,6.4 -40,-12.4 -10.4,-12.4" 
-                  fill="hsl(43 74% 49% / 0.2)"
-                  strokeWidth="1"
-                />
-                
-                {/* Central symbol */}
-                <circle r="15" fill="hsl(43 74% 49% / 0.3)" strokeWidth="2" />
-                <circle r="8" fill="hsl(43 74% 49% / 0.5)" />
-                
-                {/* Connecting lines */}
-                {[0, 60, 120, 180, 240, 300].map((angle, i) => (
-                  <line
-                    key={i}
-                    x1="0"
-                    y1="0"
-                    x2={Math.cos((angle * Math.PI) / 180) * 70}
-                    y2={Math.sin((angle * Math.PI) / 180) * 70}
-                    opacity="0.4"
-                  />
-                ))}
-              </g>
-              
-              {/* Hands silhouette */}
-              <g transform="translate(200, 150)" fill="none" stroke="hsl(43 74% 49% / 0.6)" strokeWidth="0.5">
-                {/* Left hand outline */}
-                <path d="M-120,80 Q-100,60 -80,70 Q-60,80 -40,60" opacity="0.4" />
-                {/* Right hand outline */}
-                <path d="M120,80 Q100,60 80,70 Q60,80 40,60" opacity="0.4" />
-              </g>
-            </svg>
-          </div>
+      {/* Rafael Photo */}
+      <div className="relative w-full max-w-md mx-auto mb-8 sm:mb-12">
+        <div className="relative rounded-2xl overflow-hidden border-2 border-primary/30 shadow-2xl">
+          <img 
+            src={rafaelPhoto} 
+            alt="Рафаэль - практик нумерологии" 
+            className="w-full h-auto object-cover"
+          />
+          {/* Gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-cosmic-deep/60 via-transparent to-transparent" />
         </div>
         
         {/* Glow effect */}
-        <div className="absolute inset-0 rounded-2xl" style={{
-          boxShadow: '0 0 60px hsl(43 74% 49% / 0.2), inset 0 0 60px hsl(43 74% 49% / 0.1)',
+        <div className="absolute inset-0 rounded-2xl pointer-events-none" style={{
+          boxShadow: '0 0 60px hsl(43 74% 49% / 0.3), inset 0 0 30px hsl(43 74% 49% / 0.1)',
         }} />
       </div>
 

@@ -4,6 +4,7 @@ import FloatingParticles from '@/components/FloatingParticles';
 import StarField from '@/components/StarField';
 import HeroSection from '@/components/HeroSection';
 import KarmicCalculator from '@/components/KarmicCalculator';
+import RafaelBio from '@/components/RafaelBio';
 import FinalCTA from '@/components/FinalCTA';
 import ScrollReveal from '@/components/ScrollReveal';
 
@@ -49,6 +50,16 @@ const Index = () => {
           <KarmicCalculator />
         </ScrollReveal>
         
+        <ScrollReveal delay={100}>
+          <div className="relative">
+            <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
+          </div>
+        </ScrollReveal>
+
+        <ScrollReveal delay={150}>
+          <RafaelBio />
+        </ScrollReveal>
+
         <ScrollReveal delay={100}>
           <div className="relative">
             <div className="absolute left-1/2 -translate-x-1/2 w-px h-20 bg-gradient-to-b from-transparent via-primary/50 to-transparent" />
