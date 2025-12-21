@@ -223,9 +223,9 @@ const KarmicCalculator = () => {
                         </ul>
                         <div className="w-full bg-gradient-to-r from-gold-dark via-gold to-gold-light text-cosmic-deep font-semibold text-center py-2.5 px-4 rounded-lg shadow-lg">
                           <span>Снять блоки + Гайд</span>
-                          <span className="ml-2">666₽</span>
+                          <span className="ml-2">(666₽</span>
                           <span className="ml-1 line-through opacity-60">6666₽</span>
-                          <span className="ml-1 text-xs">-90%</span>
+                          <span className="ml-1">-90%)</span>
                         </div>
                         <p className="text-xs italic text-primary/70">Твоя личная стратегия и решение проблем 2026</p>
                       </div>
