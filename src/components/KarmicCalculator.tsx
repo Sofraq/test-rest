@@ -197,7 +197,7 @@ const KarmicCalculator = () => {
                     <p className="text-primary/90 font-medium mb-1">• Твой барьер:</p>
                     <p className="blur-[6px] select-none">{povertyScenarios[result].barrier}</p>
                     <a 
-                      href="https://t.me/+24_pYqKFRp1mNTVk"
+                      href="https://auth.robokassa.ru/merchant/Invoice/pQvgIJoE4kGyBF52gjg64Q"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="absolute inset-x-0 top-8 z-10 flex items-start justify-center cursor-pointer"
