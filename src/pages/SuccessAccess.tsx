@@ -70,9 +70,38 @@ const SuccessAccess = () => {
           </div>
 
           {/* Footer note */}
-          <p className="text-center text-primary/50 mt-8 sm:mt-10 text-xs sm:text-sm animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+          <p className="text-center text-primary/50 mt-6 sm:mt-8 text-xs sm:text-sm animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
             Ссылка откроется в Telegram
           </p>
+
+          {/* Personal Consultation Section */}
+          <div className="mt-10 sm:mt-14 animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+            <div className="golden-frame p-6 sm:p-8 bg-card/50 backdrop-blur-sm border border-primary/30 mx-2">
+              <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-gold-glow mb-4">
+                Хочешь глубже?
+              </h2>
+              <p className="text-foreground/80 text-sm sm:text-base leading-relaxed mb-4">
+                Получи личный разбор от Рафаэля — индивидуальная консультация, где ты получишь конкретные ответы на свои вопросы и персональную стратегию на 2026 год.
+              </p>
+              <p className="text-primary font-semibold text-sm sm:text-base mb-6">
+                ⚡ Места ограничены — только 10 слотов в месяц
+              </p>
+              <a
+                href="https://t.me/Darknes_reborn"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button 
+                  variant="gold" 
+                  size="lg" 
+                  className="w-full max-w-[320px] mx-auto"
+                >
+                  Забронировать личный разбор
+                </Button>
+              </a>
+            </div>
+          </div>
         </div>
       </main>
     </div>
